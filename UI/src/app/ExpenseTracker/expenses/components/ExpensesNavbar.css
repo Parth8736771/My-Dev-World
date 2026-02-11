@@ -1,0 +1,121 @@
+.expense-navbar {
+    background: var(--bg-card);
+    border-bottom: 2px solid var(--border-subtle);
+    padding: 15px 20px;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary);
+    transition: var(--transition);
+    text-decoration: none !important;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-hover);
+    transform: scale(1.05);
+}
+
+.brand-icon {
+    font-size: 24px;
+}
+
+.brand-text {
+    background: var(--primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary);
+    background: var(--bg-hover);
+}
+
+.theme-icon {
+    font-size: 16px;
+}
+
+.theme-label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dropdown-item-custom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    transition: var(--transition);
+    cursor: pointer;
+    min-width: 160px;
+}
+
+.dropdown-item-custom:hover {
+    background: var(--bg-hover);
+    color: var(--primary);
+}
+
+.dropdown-item-custom.active {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-default);
+    padding: 6px 8px;
+}
+
+.back-button {
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.back-button:hover {
+    transform: translateX(-2px);
+}
+
+/* Dark theme */
+:global([data-theme="dark"]) .expense-navbar {
+    background: #1e1e1e;
+    border-color: #444;
+}
+
+:global([data-theme="dark"]) .theme-toggle:hover {
+    background: #2a2a2a;
+}
+
+/* Rose theme */
+:global([data-theme="rose"]) .navbar-brand {
+    color: var(--primary);
+}
+
+:global([data-theme="rose"]) .brand-text {
+    background: linear-gradient(135deg, #f43f5e, #fb7185);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

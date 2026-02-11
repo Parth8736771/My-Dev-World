@@ -1,0 +1,322 @@
+/* ========== LEARNING APP STYLES ========== */
+
+/* Containers & Layout */
+.learnings-home,
+.learning-view,
+.learning-edit {
+    padding: 20px 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Headers */
+.learnings-home .learnings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0 24px 0;
+    padding: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.learnings-home .learnings-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.learnings-home .learnings-header p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 8px 0 0 0;
+}
+
+.learning-view .view-header,
+.learning-edit .view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 32px 0;
+    gap: 20px;
+}
+
+.learning-view .view-header h2,
+.learning-edit .view-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.learning-view .view-header .muted,
+.learning-edit .view-header .muted {
+    color: #666;
+    margin: 8px 0 0 0;
+}
+
+/* Button Groups */
+.button-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.button-group .btn {
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.button-group .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Cards */
+.list-group-item {
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9ff;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    border-radius: 12px 12px 0 0;
+    font-weight: 600;
+}
+
+.card-header.bg-light {
+    background: linear-gradient(135deg, #f5f7fa 0%, #f0f2f5 100%);
+}
+
+/* Topic Cards */
+.card-mini {
+    background: linear-gradient(135deg, #f5f7fa 0%, #f0f2f5 100%);
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.card-mini:hover {
+    background: linear-gradient(135deg, #f0f2f5 0%, #e9ecef 100%);
+    border-left-color: #764ba2;
+}
+
+/* Text Utilities */
+.muted {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Topic-specific styles */
+.topic-notes {
+    padding: 12px 0;
+}
+
+.topic-notes p {
+    margin-bottom: 6px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Q&A Styles */
+.question-item {
+    border-left: 4px solid #0d6efd;
+    padding-left: 12px;
+    margin: 12px 0;
+}
+
+.question-item strong {
+    color: #0d6efd;
+}
+
+/* Quiz Player */
+.quiz-player .quiz-question {
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe0cc 100%);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.quiz-player .bg-light {
+    background-color: #e7f3ff !important;
+    border-radius: 8px;
+}
+
+/* Flashcard Player */
+.flashcard-player .flashcard-display {
+    background: linear-gradient(135deg, #fff8f0 0%, #ffe0cc 100%);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.flashcard-player .flashcard-display:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #ffe0cc 0%, #ffc99e 100%);
+}
+
+.flashcard-player .flashcard-display.flipped {
+    background: linear-gradient(135deg, #e7f3ff 0%, #d0e8ff 100%);
+}
+
+/* Form Styles */
+.form-control,
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #d0d8e3;
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Input Group */
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+input.form-control:disabled,
+textarea.form-control:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .learnings-home .learnings-header,
+    .learning-view .view-header,
+    .learning-edit .view-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .learnings-home .learnings-header h1,
+    .learning-view .view-header h2,
+    .learning-edit .view-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .button-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .row .col-md-6,
+    .row .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.list-group-item,
+.btn {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Utilities */
+.gap-2 {
+    gap: 8px;
+}
+
+.ps-3 {
+    padding-left: 12px;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+/* Loading & empty states */
+.spinner-border {
+    color: #667eea;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}

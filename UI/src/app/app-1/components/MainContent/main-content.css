@@ -1,0 +1,6 @@
+.section-container {
+    background: var(--bg-page);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}

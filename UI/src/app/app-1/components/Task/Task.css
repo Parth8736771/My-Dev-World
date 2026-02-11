@@ -1,0 +1,97 @@
+/* WorkspaceCard.css */
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.task-card {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.task-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: #ddd;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.priority {
+    /* background: #f4f4f5; */
+    /* padding: 4px 10px; */
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.description {
+    margin: 12px 0;
+    font-size: 0.9rem;
+    /* color: #555; */
+    line-height: 1.4;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    /* background: #eef2ff; */
+    /* color: #4338ca; */
+    /* padding: 4px 10px; */
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.created-date {
+    font-size: 12px;
+}
+
+.task-count {
+    font-size: 12px;
+    color: #666;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 2ch;
+}
+
+.container {
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    background: var(--bg-page);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    width: 50%;
+}

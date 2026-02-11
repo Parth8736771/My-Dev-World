@@ -1,0 +1,183 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* ===== Base ===== */
+    --font-sans:
+        "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* ===== Brand (Rose) ===== */
+    --rose-50: #fff1f4;
+    --rose-100: #ffe4ea;
+    --rose-200: #fecdd6;
+    --rose-300: #fda4b4;
+    --rose-400: #fb7185;
+    --rose-500: #f43f5e; /* primary */
+    --rose-600: #e11d48;
+    --rose-700: #be123c;
+    --rose-800: #9f1239;
+    --rose-900: #881337;
+
+    /* ===== Backgrounds ===== */
+    --bg-page: #ffffff;
+    --bg-surface: #fff7f9;
+    --bg-card: var(--rose-100);
+    /* --bg-card: #ffffff; */
+    --bg-hover: var(--rose-50);
+    --bg-selected: var(--rose-100);
+
+    /* ===== Text ===== */
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --text-muted: #6b7280;
+    --text-inverse: #ffffff;
+    --text-title: var(--rose-900);
+
+    /* ===== Primary Action ===== */
+    --primary: var(--rose-500);
+    --primary-hover: var(--rose-600);
+    --primary-active: var(--rose-700);
+    --primary-foreground: #ffffff;
+
+    /* ===== Secondary Action ===== */
+    --secondary: var(--rose-100);
+    --secondary-hover: var(--rose-200);
+    --secondary-foreground: var(--rose-700);
+
+    /* ===== Borders & Dividers ===== */
+    --border-subtle: #f1cbd4;
+    --border-default: #e5e7eb;
+    --border-strong: var(--rose-300);
+
+    /* ===== Inputs ===== */
+    --input-bg: #ffffff;
+    --input-border: #e5e7eb;
+    --input-focus: var(--rose-400);
+    --input-placeholder: #9ca3af;
+
+    /* ===== Status Colors ===== */
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --error: #dc2626;
+    --info: #0284c7;
+
+    /* ===== Shadows ===== */
+    --shadow-sm: 0 1px 2px rgba(244, 63, 94, 0.08);
+    --shadow-md: 0 4px 12px rgba(244, 63, 94, 0.12);
+    --shadow-lg: 0 10px 30px rgba(244, 63, 94, 0.18);
+
+    /* ===== Radius ===== */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    /* ===== CUSTOM ===== */
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --accent-color: #2196f3;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --white-color: #ffffff;
+    --dark-color: #252525;
+    --light-gray: #f5f5f5;
+    --medium-gray: #cccccc;
+    --border-color: #e0e0e0;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --bg-body: #f5f5f5;
+
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] {
+    /* ===== Backgrounds ===== */
+    --bg-page: #0f0a0c;
+    --bg-surface: #181014;
+    --bg-card: #1f1418;
+    --bg-hover: #2a161c;
+    --bg-selected: #3a1823;
+    --bg-body: #000;
+
+    /* ===== Text ===== */
+    --text-primary: #f9fafb;
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-inverse: #111827;
+    --text-title: var(--rose-50);
+
+    /* ===== Primary Action ===== */
+    --primary: #fb7185;
+    --primary-hover: #f43f5e;
+    --primary-active: #e11d48;
+    --primary-foreground: #111827;
+
+    /* ===== Secondary Action ===== */
+    --secondary: #3a1823;
+    --secondary-hover: #4a1d2b;
+    --secondary-foreground: #fda4b4;
+
+    /* ===== Borders ===== */
+    --border-subtle: #3a1a24;
+    --border-default: #3f1d28;
+    --border-strong: #fb7185;
+    --border-radius: 8px;
+
+    /* ===== Inputs ===== */
+    --input-bg: #1f1418;
+    --input-border: #3f1d28;
+    --input-focus: #fb7185;
+    --input-placeholder: #9ca3af;
+
+    /* ===== Status Colors ===== */
+    --success: #22c55e;
+    --warning: #fbbf24;
+    --error: #f87171;
+    --info: #38bdf8;
+
+    /* ===== Shadows ===== */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        "Poppins",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow: auto;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}

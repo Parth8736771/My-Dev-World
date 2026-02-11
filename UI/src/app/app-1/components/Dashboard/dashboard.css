@@ -1,0 +1,103 @@
+.title-row-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+}
+
+.modal-dialog {
+    display: block !important;
+}
+
+.show {
+    display: block;
+}
+
+.modal-header {
+    /* font-size: 25px;
+    font-weight: 700; */
+    text-align: center;
+    position: relative;
+    background: darkslategray;
+    color: #fff;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    /* background-color: red; */
+    margin: 0px 0px;
+    padding: 30px;
+}
+
+.modal-content {
+    max-width: 500px;
+    background: var(--bg-card);
+}
+
+.btn-close {
+    content: "X";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    /* color: #fff; */
+    color: var(--text-primary);
+    display: none;
+    cursor: pointer;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* align-items: center; */
+    /* gap: 30px; */
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.form-control {
+    padding: 10px 20px;
+    /* color: var(--text-primary);
+    background: var(--input-bg); */
+    /* color: var(--bg-page); */
+    border: 1px solid var(--border-default);
+    /* border: 1px solid #000; */
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    /* background: var(--bg-body); */
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    background: var(--bg-body);
+    color: var(--text-primary);
+}
+
+.component-title {
+    width: 50% !important;
+    font-size: 30px;
+    padding-inline: 1.5rem !important;
+    color: var(--text-primary);
+}
+
+.btns-container {
+    width: auto !important;
+}

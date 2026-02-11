@@ -1,0 +1,29 @@
+.learnings-home .learnings-header,
+.learning-view .view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+.learnings-home h1,
+.learning-view h2 {
+    margin: 0;
+}
+.muted {
+    color: #6c757d;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(22, 27, 34, 0.06);
+    margin-top: 12px;
+}
+.actions {
+    margin-top: 12px;
+}
